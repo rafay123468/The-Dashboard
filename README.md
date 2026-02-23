@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <div>
+          <div class="menu-title">Shop Now</div>
+          <div class="menu-item active">Dashboard</div>
+          <div class="menu-item">Users</div>
+          <div class="menu-item">Products</div>
+          <div class="menu-item">Orders</div>
+          <div class="menu-item">Setting</div>
+        </div>
+        <div class="logout">Logout</div>
+      </div>
+      <div class="header">
+        <div class="logo">ShopNow</div>
+        <div class="profile">
+          <span>Welcome Admin</span>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Total Users</div>
+            <div class="card-value">12,550</div>
+            <div class="card-growth">+12% this month</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Total Orders</div>
+            <div class="card-value">450</div>
+            <div class="card-growth">-12% this month</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Total Products</div>
+            <div class="card-value">1000</div>
+            <div class="card-growth">+32% this month</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Total Revenue</div>
+            <div class="card-value">$500</div>
+            <div class="card-growth">+2% this month</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-title">Recent Activity</div>
+          <div class="activity">User Ahmed Registered</div>
+          <div class="activity">order #400 completed</div>
+          <div class="activity">User Ali deleted Account</div>
+          <div class="activity">order #400 Payment Recieved</div>
+          <div class="activity">New product add</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
