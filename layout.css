@@ -1,0 +1,127 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dashbord{
+    display: grid;
+    grid-template-columns: repeat (430px 1fr 2fr);
+    grid-template-areas: "header header header"
+    "sidebar stats stats"
+    "sidebar content content"
+    "footer footer footer";
+    grid-template-rows: 70px 120px 320px 60px;
+    gap: 10px;
+}
+.dashbord>div{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.header{
+    background-color: blue;
+    grid-area: header;
+}
+.sidebar{
+    background-color: indianred;
+    grid-area: sidebar;
+}
+.stats{
+    background-color: burlywood;
+    grid-area: stats;
+}
+.maincontent{
+    background-color: blueviolet;
+    grid-area: content;
+
+}
+.footer{
+    background-color: black;
+    grid-area: footer;
+} */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: aquamarine;
+}
+.dashboard{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: red;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.menu-title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:blue;
+    margin-bottom: 20px;
+}
+.menu-item{
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    border-left: 2px solid transparent;
+}
+.menu-item:hover, .active{
+    background-color: blueviolet;
+    color: aqua;
+}
+.logout{
+    padding: 12px;
+    border-radius: 13px;
+    background-color:black;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.logo{
+    font-weight:600;
+    font-size: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 40px;
+
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+.main{
+    grid-area: main;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    overflow-y: auto;
+}
+
